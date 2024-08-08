@@ -389,10 +389,10 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M 632,79
-        M 605,79
-        A 27,27 0 1,0 661,79
-        A 27,27 0 1,0 605,79
+        M 0,62
+        M -34,62
+        A 34,34 0 1,0 34,62
+        A 34,34 0 1,0 -34,62
         Z
     </string>
 
@@ -402,7 +402,13 @@
          appearance of the cutout as much as possible, and may be smaller than
          config_mainBuiltInDisplayCutout
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">@string/config_mainBuiltInDisplayCutout</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">
+        M -50,0
+        H 50
+        V 100
+        H -50
+        Z
+    </string>
 
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
