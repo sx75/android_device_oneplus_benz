@@ -30,9 +30,24 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget
 
+#RIL
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor 
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V2-ndk_platform.vendor
+
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.hostapd-V1-ndk.vendor \
+    android.hardware.wifi.supplicant-V1-ndk.vendor 
+
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8550-common/common.mk)
