@@ -10,7 +10,7 @@ include device/oneplus/sm7550-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oneplus/benz
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP5D3FL1
+TARGET_OTA_ASSERT_DEVICE := OP5D3FL1,benz
 
 # Display
 TARGET_SCREEN_DENSITY := 450
